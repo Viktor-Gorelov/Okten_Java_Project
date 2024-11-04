@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.5-insert-manager-in-users-table" author="Viktoruin">
+        <insert tableName="users">
+            <column name="user_status" value="STANDARD" />
+            <column name="is_banned" value="0" />
+            <column name="user_role" value="MANAGER" />
+            <column name="username" value="Viktor" />
+            <column name="password" value="$2a$10$P4JLdbJutvOIRcBqzyaWsusPDyAGz4bt9/PuJeV5or/5zuucJTH9q" />
+            <column name="email" value="viktor15gorelov@gmail.com" />
+            <column name="registered_at" value="2024-11-03 10:26:32" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.0-create-advertisements-table" author="Viktoruin">
+        <createTable tableName="advertisements">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="brand" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="model" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currency_type" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="advertisement_status" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="edit_attempts" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="region" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="view_count" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="daily_views" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="weekly_views" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="monthly_views" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
